@@ -5,3 +5,7 @@ FROM openjdk:8
 WORKDIR /home/www
 COPY security-0.0.1-SNAPSHOT.jar /home/www
 CMD ["java","-jar","security-0.0.1-SNAPSHOT.jar"]
+
+# 把security-0.0.1-SNAPSHOT.jar包和dockerfile放在同一个目录下，执行一下命令
+# 构建镜像名为 security,命令: docker build -t security .
+# 启动镜像security, 命令: docker run -itd --name spring-security-demo -p 8666:8666 security
