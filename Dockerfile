@@ -1,7 +1,5 @@
-#FROM openjdk:8-jre-alpine
+# jdk镜像版本
 FROM openjdk:8
-#FROM 192.168.16.55/sinohealth-aimdt/centos7-jdk-utf8:8_202
-#RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 # 这个路径是在容器里面
 WORKDIR /home/docker
 COPY security-0.0.1-SNAPSHOT.jar /home/docker
